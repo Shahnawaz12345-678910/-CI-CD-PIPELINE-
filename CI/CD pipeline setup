@@ -1,0 +1,35 @@
+Create a New Repository
+clone the repository 
+by - git clone <repository_url>
+Set Up CI/CD Configuration:- by jenkins /Gitlab CI/CD or TRAVIS CI  tools.
+ Create a configuration file specific to the chosen tool
+ #.gitlab-ci.yml 
+stages:
+  - build
+  - test
+  - deploy
+
+build_job:
+  stage: build
+  script:
+    - echo "Building the application..."
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests..."
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Deploying the application..."
+
+
+Add and Commit Changes:-
+customized it according to your needs, add it to your local repository and commit the changes by the commands-
+#git add .gitlab-ci.yml
+#git commit -m "Add CI/CD pipeline configuration"
+
+
+Push the committed changes to your GitHub repository by -
+#git push origin master
