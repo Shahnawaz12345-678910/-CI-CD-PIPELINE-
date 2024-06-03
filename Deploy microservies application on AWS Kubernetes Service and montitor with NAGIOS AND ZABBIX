@@ -1,0 +1,18 @@
+git clone repository_url
+Deploy Microservices Application on AWS EKS -
+Set up your AWS account and create an EKS cluster
+Containerize your microservice
+Create Kubernetes deployment and service YAML files for each microservice
+by kubetcl or Helm  tools
+apply yaml file to ElasticKubernetesService  cluster 
+install nagios or zabbix 
+configure it
+setup monitoring for microservice apllication by zabbix templates.
+add configuration files 
+like - nagios.cfg zabbix_agentd.conf
+git changes by -
+#git add .
+#git commit -m "Add microservices deployment and monitoring configuration"
+push changes -
+#git push origin master
+
